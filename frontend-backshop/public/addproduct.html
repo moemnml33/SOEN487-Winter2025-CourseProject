@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <header class="row">
+        <div class="col-12 bg-primary text-white text-center p-3">
+            <h1>Inventory Management</h1>
+        </div>
+    </header>
+
+    <div class="row">
+        <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#">User</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <form id="productForm" action="/addproduct" method="post">
+                <div class="form-group">
+                    <h1>Add New Product</h1>
+                </div>
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" class="form-control" id="productName" name="productName" required>
+                </div>
+                <div class="form-group">
+                    <label for="productId">ID:</label>
+                    <input type="text" class="form-control" id="productId" name="productId" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select class="form-control" id="category" name="category">
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="books">Books</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="unit">Unit:</label>
+                    <select class="form-control" id="unit" name="unit">
+                        <option value="piece">Piece</option>
+                        <option value="box">Box</option>
+                        <option value="kg">Kg</option>
+                        <option value="liter">Liter</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="unitPrice">Unit Price:</label>
+                    <input type="text" class="form-control" id="unitPrice" name="unitPrice" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Clear</button>
+            </form>
+        </main>
+    </div>
+
+    <footer class="row">
+        <div class="col-12 bg-dark text-white text-center p-3">
+            <p>Inventory System © 2024. All Rights Reserved.</p>
+            <a href="privacy.html" class="text-white">Privacy/Disclaimer Statement</a>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
