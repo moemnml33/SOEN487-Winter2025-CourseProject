@@ -1,0 +1,28 @@
+{
+  "name": "soen487-winter2025-courseproject",
+  "version": "1.0.0",
+  "description": "This repository is for the source code of the SOEN487 course project at CSSE department in Concordia University",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moemnml33/SOEN487-Winter2025-CourseProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/moemnml33/SOEN487-Winter2025-CourseProject/issues"
+  },
+  "homepage": "https://github.com/moemnml33/SOEN487-Winter2025-CourseProject#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.1"
+  }
+}
